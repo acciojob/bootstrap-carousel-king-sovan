@@ -2,10 +2,56 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+		.carousel-inner > .item > img {
+			width: 100%;
+			height: 400px;
+			object-fit: cover;
+		}
+	</style>
 </head>
 <body>
     <!-- Write your code here -->
     <!-- Bootstrap Bundle with Popper -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+		</ol>
+
+		<div class="carousel-inner" role="listbox">
+            <div class="item first-slide">
+                <img src="https://images.unsplash.com/photo-1727013031787-858020654797?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=400&width=800" alt="First slide">
+            </div>
+            <div class="item second-slide">
+                <img src="https://images.unsplash.com/photo-1727162334294-170987f6b31b?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=400&width=800" alt="Second slide">
+            </div>
+            <div class="item third-slide active">
+                <img src="https://images.unsplash.com/photo-1726534168836-59dff8524925?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=400&width=800" alt="Third slide">
+            </div>
+            <div class="item fourth-slide">
+                <img src="https://images.unsplash.com/photo-1726928104453-6c6a6b33fe54?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=400&width=800" alt="Fourth slide">
+            </div>
+            <div class="item fifth-slide">
+                <img src="https://images.unsplash.com/photo-1726397711443-e419f45150fe?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=400&width=800" alt="Fifth slide">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+			
+	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
